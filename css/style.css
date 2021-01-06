@@ -97,6 +97,19 @@ body {
   color: #ffffff;
 }
 
+/* Заголовки секций */
+.section-title {
+  margin-bottom: 50px;
+
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--pri-text-color);
+}
+
 /* Хедер */
 .page-header {
   border-bottom: #e5e5e5 1px solid;
@@ -178,21 +191,103 @@ body {
   color: var(--accent-color);
 }
 
-/* Главный контент */
-/* Студия */
+/* Футер */
+.page-footer {
+  background-color: var(--footer-background-color);
+}
 
-/* Заголовки секций */
-.section-title {
-  margin-bottom: 50px;
+.footer-flex {
+  display: flex;
+  align-items: center;
+}
 
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 42px;
-  text-align: center;
+/* Реквизиты */
+.requisites {
+  width: 231px;
+  margin-right: 70px;
+}
+
+/* Адрес */
+.address {
+  margin-top: 20px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
   letter-spacing: 0.03em;
 
-  color: var(--pri-text-color);
+  color: #ffffff;
 }
+
+/* Контакты футер*/
+.contacts-footer {
+  margin-top: 9px;
+}
+
+.contacts-footer > .item:not(:first-child) {
+  margin-top: 9px;
+}
+
+.contacts-footer .link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Присоединяйтесь */
+.join {
+  width: 206px;
+
+  padding-top: 72px;
+  padding-bottom: 100px;
+}
+
+.join > .text {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.join-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.join-social > .item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.join-social .link {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+
+  border-radius: 50%;
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.join-social .icon {
+  fill: currentColor;
+}
+
+.join-social .link:hover,
+.join-social .link:focus {
+  background-color: var(--accent-color);
+}
+
+/* ------Главный контент------ */
+/* ---Студия--- */
 
 /* Герой */
 .hero {
@@ -272,6 +367,50 @@ body {
 
 .features-list {
   display: flex;
+  justify-content: center;
+}
+
+.features-list > .item {
+  width: 270px;
+}
+
+.features-list > .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.features .thumb {
+  height: 120px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 30px;
+
+  border-radius: 4px;
+
+  background-color: var(--sec-background-color);
+}
+
+.features-list .title {
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--pri-text-color);
+}
+
+.features-list .text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: var(--sec-text-color);
 }
 
 /* Чем мы занимаемся */
@@ -398,7 +537,7 @@ body {
   margin-right: 30px;
 }
 
-.clients-list .link{
+.clients-list .link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -412,5 +551,55 @@ body {
 }
 
 .clients-list .icon {
-  fill:currentColor;
+  fill: currentColor;
+}
+
+.clients-list .link:hover,
+.clients-list .link:focus {
+  border: 1px solid var(--accent-color);
+  color: var(--accent-color);
+}
+
+/* ---Портфолио--- */
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+/* Фильтр */
+.filter-list {
+  display: flex;
+  justify-content: center;
+
+  margin-bottom: 50px;
+}
+
+.filter-list > .item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.filter-btn {
+  padding: 6px 22px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  border: transparent;
+  border-radius: 4px;
+
+  color: var(--pri-text-color);
+  background-color: var(--sec-background-color);
+}
+
+.filter-btn:hover,
+.filter-btn:focus {
+  color: #ffffff;
+  background-color: var(--accent-color);
+  
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  
+  cursor: pointer;
 }
